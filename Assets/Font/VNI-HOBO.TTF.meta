@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: a528f6d0acaf3564a926ae1ca0cd7973
+timeCreated: 1489207213
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: VNI-Hobo
+  fontNames:
+  - VNI-Hobo
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

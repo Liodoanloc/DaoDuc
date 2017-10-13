@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 1f680f10ffb14d542a316ad5be4480de
+timeCreated: 1506577815
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: iCiel Pony
+  fontNames:
+  - iCiel Pony
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

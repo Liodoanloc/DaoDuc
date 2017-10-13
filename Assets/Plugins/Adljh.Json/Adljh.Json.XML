@@ -1,0 +1,714 @@
+﻿<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Adljh.Json</name>
+    </assembly>
+    <members>
+        <member name="T:Adljh.Json.JSON">
+            <summary>
+            <para>Adljh.Json là bộ thư viện chuyển đổi Object sang dạng Json rất tiện lợi, hiệu quả và dễ sử dụng.</para>
+            <para>Cách sử dụng bộ thư viện này giống với gói WWWForm mà Unity cung cấp</para>
+            <para>Hi vọng bộ thư viện này sẽ khiến các bạn thích ^^ </para>
+            <para>Truy cập http://vinathing.xyz tham quan thêm các gói thư viện tiện ích .Net khác mà mình tạo ra phục vụ nhu cầu sử dụng nữa nhé các bạn.</para>
+            <para>Hân hạnh được sự ủng hộ từ các bạn ^^ </para>
+            </summary>
+        </member>
+        <member name="F:Adljh.Json.JSON.type">
+            <summary>
+            Kiểu của Json
+            </summary>
+        </member>
+        <member name="F:Adljh.Json.JSON.list">
+            <summary>
+            Một list các JSON
+            </summary>
+        </member>
+        <member name="F:Adljh.Json.JSON.keys">
+            <summary>
+            List các key
+            </summary>
+        </member>
+        <member name="F:Adljh.Json.JSON.str">
+            <summary>
+            string JSON
+            </summary>
+        </member>
+        <member name="F:Adljh.Json.JSON.n">
+            <summary>
+            float JSON
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Adljh.Json.JSON.#ctor(Adljh.Json.JSON.Type)" -->
+        <member name="M:Adljh.Json.JSON.#ctor(System.Boolean)">
+            <summary>
+            <para>Hàm khởi tạo 1 JSON để bạn bắt đầu tạo ra những chuỗi Json theo nhu cầu sử dụng của mình</para>
+            <para>Các bạn xem qua một ví dụ sau:</para>
+            <para>Adljh.Json.JSON JSON = new Adljh.Json.JSON(Adljh.Json.JSON.Type.OBJECT);</para>
+            </summary>
+            <param name="val">System.Boolean</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.#ctor(System.Single)">
+            <summary>
+            <para>Hàm khởi tạo 1 JSON để bạn bắt đầu tạo ra những chuỗi Json theo nhu cầu sử dụng của mình</para>
+            <para>Các bạn xem qua một ví dụ sau:</para>
+            <para>Adljh.Json.JSON JSON = new Adljh.Json.JSON(Adljh.Json.JSON.Type.OBJECT);</para>
+            </summary>
+            <param name="val">System.Single</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.#ctor(System.Int32)">
+            <summary>
+            <para>Hàm khởi tạo 1 JSON để bạn bắt đầu tạo ra những chuỗi Json theo nhu cầu sử dụng của mình</para>
+            <para>Các bạn xem qua một ví dụ sau:</para>
+            <para>Adljh.Json.JSON JSON = new Adljh.Json.JSON(Adljh.Json.JSON.Type.OBJECT);</para>
+            </summary>
+            <param name="val">System.Int32</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.#ctor(System.Int64)">
+            <summary>
+            <para>Hàm khởi tạo 1 JSON để bạn bắt đầu tạo ra những chuỗi Json theo nhu cầu sử dụng của mình</para>
+            <para>Các bạn xem qua một ví dụ sau:</para>
+            <para>Adljh.Json.JSON JSON = new Adljh.Json.JSON(Adljh.Json.JSON.Type.OBJECT);</para>
+            </summary>
+            <param name="val">System.Int64</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.#ctor(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            <para>Hàm khởi tạo 1 JSON để bạn bắt đầu tạo ra những chuỗi Json theo nhu cầu sử dụng của mình</para>
+            <para>Các bạn xem qua một ví dụ sau:</para>
+            <para>Adljh.Json.JSON JSON = new Adljh.Json.JSON(Adljh.Json.JSON.Type.OBJECT);</para>
+            </summary>
+            <param name="dic">System.Collection.Generic.Dictionary</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.#ctor(System.Collections.Generic.Dictionary{System.String,Adljh.Json.JSON})">
+            <summary>
+            <para>Hàm khởi tạo 1 JSON để bạn bắt đầu tạo ra những chuỗi Json theo nhu cầu sử dụng của mình</para>
+            <para>Các bạn xem qua một ví dụ sau:</para>
+            <para>Adljh.Json.JSON JSON = new Adljh.Json.JSON(Adljh.Json.JSON.Type.OBJECT);</para>
+            </summary>
+            <param name="dic">System.Collection.Generic.Dictionary</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.#ctor(Adljh.Json.JSON.AddJSONContents)">
+            <summary>
+            <para>Hàm khởi tạo 1 JSON để bạn bắt đầu tạo ra những chuỗi Json theo nhu cầu sử dụng của mình</para>
+            <para>Các bạn xem qua một ví dụ sau:</para>
+            <para>Adljh.Json.JSON JSON = new Adljh.Json.JSON(Adljh.Json.JSON.Type.OBJECT);</para>
+            </summary>
+            <param name="dic">Adljh.Json.JSON.AddJSONContents</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.#ctor(Adljh.Json.JSON[])">
+            <summary>
+            <para>Hàm khởi tạo 1 JSON để bạn bắt đầu tạo ra những chuỗi Json theo nhu cầu sử dụng của mình</para>
+            <para>Các bạn xem qua một ví dụ sau:</para>
+            <para>Adljh.Json.JSON JSON = new Adljh.Json.JSON(Adljh.Json.JSON.Type.OBJECT);</para>
+            </summary>
+            <param name="objs">Adljh.Json.JSON</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.StringObject(System.String)">
+            <summary>
+            <para>Hàm khởi tạo 1 JSON để bạn bắt đầu tạo ra những chuỗi Json theo nhu cầu sử dụng của mình</para>
+            <para>Các bạn xem qua một ví dụ sau:</para>
+            <para>Adljh.Json.JSON JSON = new Adljh.Json.JSON(Adljh.Json.JSON.Type.OBJECT);</para>
+            </summary>
+            <param name="val">string values</param>
+            <returns></returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.Create">
+            <summary>
+            Tạo mới một JSON NULL
+            </summary>
+            <returns>new JSON()</returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.Create(Adljh.Json.JSON.Type)">
+            <summary>
+            Tạo mới một JSON Type
+            </summary>
+            <param name="t">Adljh.Json.JSON.Type</param>
+            <returns></returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.Create(System.Boolean)">
+            <summary>
+            Tạo mới một JSON bool
+            </summary>
+            <param name="val">System.Boolean</param>
+            <returns></returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.Create(System.Single)">
+            <summary>
+            Tạo mới một JSON float
+            </summary>
+            <param name="val">System.Single</param>
+            <returns></returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.Create(System.Int32)">
+            <summary>
+            Tạo mới một JSON int
+            </summary>
+            <param name="val">System.Int32</param>
+            <returns></returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.Create(System.Int64)">
+            <summary>
+            Tạo mới một JSON long
+            </summary>
+            <param name="val">System.Int64</param>
+            <returns></returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.CreateStringObject(System.String)">
+            <summary>
+            Tạo mới một JSON string
+            </summary>
+            <param name="val">System.String</param>
+            <returns></returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.CreateBakedObject(System.String)">
+            <summary>
+            Tạo hoàn toàn mới một JSON string
+            </summary>
+            <param name="val">System.String</param>
+            <returns></returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.Create(System.String,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Tạo mới một JSON với các thông số
+            </summary>
+            <param name="val"></param>
+            <param name="maxDepth"></param>
+            <param name="storeExcessLevels"></param>
+            <param name="strict"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.Create(Adljh.Json.JSON.AddJSONContents)">
+            <summary>
+            Tạo mới một JSON với nội dung Json có sẵn
+            </summary>
+            <param name="content">Adljh.Json.JSON.AddJSONContents</param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Adljh.Json.JSON.Create(System.Collections.Generic.Dictionary{System.String,System.String})" -->
+        <member name="M:Adljh.Json.JSON.#ctor">
+            <summary>
+            <para>Hàm khởi tạo 1 JSON để bạn bắt đầu tạo ra những chuỗi Json theo nhu cầu sử dụng của mình</para>
+            <para>Ví dụ:</para>
+            <para>Adljh.Json.JSON JSON = new Adljh.Json.JSON();</para>
+            </summary>
+        </member>
+        <member name="M:Adljh.Json.JSON.#ctor(System.String,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            <para>Hàm khởi tạo 1 JSON để bạn bắt đầu tạo ra những chuỗi Json theo nhu cầu sử dụng của mình</para>
+            <para>Các bạn xem qua một ví dụ sau:</para>
+            <para>Adljh.Json.JSON JSON = new Adljh.Json.JSON();</para>
+            </summary>
+            <param name="str"></param>
+            <param name="maxDepth"></param>
+            <param name="storeExcessLevels"></param>
+            <param name="strict"></param>
+        </member>
+        <member name="M:Adljh.Json.JSON.Parse(System.String,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Parse JSON về kiểu nào đó
+            </summary>
+            <param name="str"></param>
+            <param name="maxDepth"></param>
+            <param name="storeExcessLevels"></param>
+            <param name="strict"></param>
+        </member>
+        <member name="M:Adljh.Json.JSON.Add(System.Boolean)">
+            <summary>
+            Thêm vào JSON một bool
+            </summary>
+            <param name="val">System.Boolean</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.Add(System.Single)">
+            <summary>
+            Thêm vào JSON một float
+            </summary>
+            <param name="val">System.Single</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.Add(System.Int32)">
+            <summary>
+            Thêm vào JSON một int
+            </summary>
+            <param name="val">System.Int32</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.Add(System.String)">
+            <summary>
+            Thêm vào JSON một string
+            </summary>
+            <param name="val">System.String</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.Add(Adljh.Json.JSON.AddJSONContents)">
+            <summary>
+            Thêm vào JSON một nội dung JSON
+            </summary>
+            <param name="val">Adljh.Json.JSON.AddJSONContents</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.Add(Adljh.Json.JSON)">
+            <summary>
+            Thêm vào JSON một JSON có sẵn
+            </summary>
+            <param name="val">Adljh.Json.JSON</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.AddField(System.String,System.Boolean)">
+            <summary>
+            <para>Thêm vào JSON một cặp Key - Values nào đó</para>
+            <para>Lưu ý: Value có thể thuộc nhiều kiểu</para>
+            </summary>
+            <param name="name">Key</param>
+            <param name="val">Values</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.AddField(System.String,System.Single)">
+            <summary>
+            <para>Thêm vào JSON một cặp Key - Values nào đó</para>
+            <para>Lưu ý: Value có thể thuộc nhiều kiểu</para>
+            </summary>
+            <param name="name">Key</param>
+            <param name="val">Values</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.AddField(System.String,System.Int32)">
+            <summary>
+            <para>Thêm vào JSON một cặp Key - Values nào đó</para>
+            <para>Lưu ý: Value có thể thuộc nhiều kiểu</para>
+            </summary>
+            <param name="name">Key</param>
+            <param name="val">Values</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.AddField(System.String,System.Int64)">
+            <summary>
+            <para>Thêm vào JSON một cặp Key - Values nào đó</para>
+            <para>Lưu ý: Value có thể thuộc nhiều kiểu</para>
+            </summary>
+            <param name="name">Key</param>
+            <param name="val">Values</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.AddField(System.String,Adljh.Json.JSON.AddJSONContents)">
+            <summary>
+            <para>Thêm vào JSON một cặp Key - Values nào đó</para>
+            <para>Lưu ý: Value có thể thuộc nhiều kiểu</para>
+            </summary>
+            <param name="name">Key</param>
+            <param name="val">Values</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.AddField(System.String,System.String)">
+            <summary>
+            <para>Thêm vào JSON một cặp Key - Values nào đó</para>
+            <para>Lưu ý: Value có thể thuộc nhiều kiểu</para>
+            </summary>
+            <param name="name">Key</param>
+            <param name="val">Values</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.AddField(System.String,Adljh.Json.JSON)">
+            <summary>
+            <para>Thêm vào JSON một cặp Key - Values nào đó</para>
+            <para>Lưu ý: Value có thể thuộc nhiều kiểu</para>
+            </summary>
+            <param name="name">Key</param>
+            <param name="val">Values</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.SetField(System.String,System.String)">
+            <summary>
+            <para>Đặt lại trong JSON một Key có sẵn và Values thay thế</para>
+            <para>Value có thể thuộc nhiều kiểu</para>
+            </summary>
+            <param name="name">Key</param>
+            <param name="val">Values</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.SetField(System.String,System.Boolean)">
+            <summary>
+            <para>Đặt lại trong JSON một Key có sẵn và Values thay thế</para>
+            <para>Value có thể thuộc nhiều kiểu</para>
+            </summary>
+            <param name="name">Key</param>
+            <param name="val">Values</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.SetField(System.String,System.Single)">
+            <summary>
+            <para>Đặt lại trong JSON một Key có sẵn và Values thay thế</para>
+            <para>Value có thể thuộc nhiều kiểu</para>
+            </summary>
+            <param name="name">Key</param>
+            <param name="val">Values</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.SetField(System.String,System.Int32)">
+            <summary>
+            <para>Đặt lại trong JSON một Key có sẵn và Values thay thế</para>
+            <para>Value có thể thuộc nhiều kiểu</para>
+            </summary>
+            <param name="name">Key</param>
+            <param name="val">Values</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.SetField(System.String,Adljh.Json.JSON)">
+            <summary>
+            <para>Đặt lại trong JSON một Key có sẵn và Values thay thế</para>
+            <para>Value có thể thuộc nhiều kiểu</para>
+            </summary>
+            <param name="name">Key</param>
+            <param name="val">Values</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.RemoveField(System.String)">
+            <summary>
+            Xoá trong JSON một cặp Key nào đó
+            </summary>
+            <param name="name">Key</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.GetField(System.Boolean@,System.String,System.Boolean)">
+            <summary>
+            <para>Kiểm tra có Key nào tên là name hay không</para>
+            <para>Nếu có thì trả giá trị cho field truyền vào là true, không có thì là false</para>
+            <para>Hàm trả về một giá trị cho Key đó</para>
+            <para>Giá trị trả về là fallback.</para>
+            <para>Fallback có thể có nhiều kiểu</para>
+            </summary>
+            <param name="field">bool truyền vào</param>
+            <param name="name">Key</param>
+            <param name="fallback">Values</param>
+            <returns>true nếu tồn tại, false nếu không tồn tại</returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.GetField(System.Boolean@,System.String,Adljh.Json.JSON.FieldNotFound)">
+            <summary>
+            <para>Kiểm tra có Key nào tên là name hay không</para>
+            <para>Nếu có thì trả giá trị cho field truyền vào là true, không có thì là false</para>
+            <para>Hàm trả về một giá trị cho Key đó</para>
+            <para>Giá trị trả về là fallback.</para>
+            <para>Fallback có thể có nhiều kiểu</para>
+            </summary>
+            <param name="field">bool truyền vào</param>
+            <param name="name">Key</param>
+            <param name="fallback">Values</param>
+            <returns>true nếu tồn tại, false nếu không tồn tại</returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.GetField(System.Single@,System.String,System.Single)">
+            <summary>
+            <para>Kiểm tra có Key nào tên là name hay không</para>
+            <para>Nếu có thì trả giá trị cho field truyền vào là true, không có thì là false</para>
+            <para>Hàm trả về một giá trị cho Key đó</para>
+            <para>Giá trị trả về là fallback.</para>
+            <para>Fallback có thể có nhiều kiểu</para>
+            </summary>
+            <param name="field">bool truyền vào</param>
+            <param name="name">Key</param>
+            <param name="fallback">Values</param>
+            <returns>true nếu tồn tại, false nếu không tồn tại</returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.GetField(System.Single@,System.String,Adljh.Json.JSON.FieldNotFound)">
+            <summary>
+            <para>Kiểm tra có Key nào tên là name hay không</para>
+            <para>Nếu có thì trả giá trị cho field truyền vào là true, không có thì là false</para>
+            <para>Hàm trả về một giá trị cho Key đó</para>
+            <para>Giá trị trả về là fallback.</para>
+            <para>Fallback có thể có nhiều kiểu</para>
+            </summary>
+            <param name="field">bool truyền vào</param>
+            <param name="name">Key</param>
+            <param name="fallback">Values</param>
+            <returns>true nếu tồn tại, false nếu không tồn tại</returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.GetField(System.Int32@,System.String,System.Int32)">
+            <summary>
+            <para>Kiểm tra có Key nào tên là name hay không</para>
+            <para>Nếu có thì trả giá trị cho field truyền vào là true, không có thì là false</para>
+            <para>Hàm trả về một giá trị cho Key đó</para>
+            <para>Giá trị trả về là fallback.</para>
+            <para>Fallback có thể có nhiều kiểu</para>
+            </summary>
+            <param name="field">bool truyền vào</param>
+            <param name="name">Key</param>
+            <param name="fallback">Values</param>
+            <returns>true nếu tồn tại, false nếu không tồn tại</returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.GetField(System.Int32@,System.String,Adljh.Json.JSON.FieldNotFound)">
+            <summary>
+            <para>Kiểm tra có Key nào tên là name hay không</para>
+            <para>Nếu có thì trả giá trị cho field truyền vào là true, không có thì là false</para>
+            <para>Hàm trả về một giá trị cho Key đó</para>
+            <para>Giá trị trả về là fallback.</para>
+            <para>Fallback có thể có nhiều kiểu</para>
+            </summary>
+            <param name="field">bool truyền vào</param>
+            <param name="name">Key</param>
+            <param name="fallback">Values</param>
+            <returns>true nếu tồn tại, false nếu không tồn tại</returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.GetField(System.Int64@,System.String,System.Int64)">
+            <summary>
+            <para>Kiểm tra có Key nào tên là name hay không</para>
+            <para>Nếu có thì trả giá trị cho field truyền vào là true, không có thì là false</para>
+            <para>Hàm trả về một giá trị cho Key đó</para>
+            <para>Giá trị trả về là fallback.</para>
+            <para>Fallback có thể có nhiều kiểu</para>
+            </summary>
+            <param name="field">bool truyền vào</param>
+            <param name="name">Key</param>
+            <param name="fallback">Values</param>
+            <returns>true nếu tồn tại, false nếu không tồn tại</returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.GetField(System.Int64@,System.String,Adljh.Json.JSON.FieldNotFound)">
+            <summary>
+            <para>Kiểm tra có Key nào tên là name hay không</para>
+            <para>Nếu có thì trả giá trị cho field truyền vào là true, không có thì là false</para>
+            <para>Hàm trả về một giá trị cho Key đó</para>
+            <para>Giá trị trả về là fallback.</para>
+            <para>Fallback có thể có nhiều kiểu</para>
+            </summary>
+            <param name="field">bool truyền vào</param>
+            <param name="name">Key</param>
+            <param name="fallback">Values</param>
+            <returns>true nếu tồn tại, false nếu không tồn tại</returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.GetField(System.UInt32@,System.String,System.UInt32)">
+            <summary>
+            <para>Kiểm tra có Key nào tên là name hay không</para>
+            <para>Nếu có thì trả giá trị cho field truyền vào là true, không có thì là false</para>
+            <para>Hàm trả về một giá trị cho Key đó</para>
+            <para>Giá trị trả về là fallback.</para>
+            <para>Fallback có thể có nhiều kiểu</para>
+            </summary>
+            <param name="field">bool truyền vào</param>
+            <param name="name">Key</param>
+            <param name="fallback">Values</param>
+            <returns>true nếu tồn tại, false nếu không tồn tại</returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.GetField(System.UInt32@,System.String,Adljh.Json.JSON.FieldNotFound)">
+            <summary>
+            <para>Kiểm tra có Key nào tên là name hay không</para>
+            <para>Nếu có thì trả giá trị cho field truyền vào là true, không có thì là false</para>
+            <para>Hàm trả về một giá trị cho Key đó</para>
+            <para>Giá trị trả về là fallback.</para>
+            <para>Fallback có thể có nhiều kiểu</para>
+            </summary>
+            <param name="field">bool truyền vào</param>
+            <param name="name">Key</param>
+            <param name="fallback">Values</param>
+            <returns>true nếu tồn tại, false nếu không tồn tại</returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.GetField(System.String@,System.String,System.String)">
+            <summary>
+            <para>Kiểm tra có Key nào tên là name hay không</para>
+            <para>Nếu có thì trả giá trị cho field truyền vào là true, không có thì là false</para>
+            <para>Hàm trả về một giá trị cho Key đó</para>
+            <para>Giá trị trả về là fallback.</para>
+            <para>Fallback có thể có nhiều kiểu</para>
+            </summary>
+            <param name="field">bool truyền vào</param>
+            <param name="name">Key</param>
+            <param name="fallback">Values</param>
+            <returns>true nếu tồn tại, false nếu không tồn tại</returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.GetField(System.String@,System.String,Adljh.Json.JSON.FieldNotFound)">
+            <summary>
+            <para>Kiểm tra có Key nào tên là name hay không</para>
+            <para>Nếu có thì trả giá trị cho field truyền vào là true, không có thì là false</para>
+            <para>Hàm trả về một giá trị cho Key đó</para>
+            <para>Giá trị trả về là fallback.</para>
+            <para>Fallback có thể có nhiều kiểu</para>
+            </summary>
+            <param name="field">bool truyền vào</param>
+            <param name="name">Key</param>
+            <param name="fallback">Values</param>
+            <returns>true nếu tồn tại, false nếu không tồn tại</returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.GetField(System.String,Adljh.Json.JSON.GetFieldResponse,Adljh.Json.JSON.FieldNotFound)">
+            <summary>
+            <para>Kiểm tra có Key nào tên là name hay không</para>
+            <para>Nếu có thì trả giá trị cho field truyền vào là true, không có thì là false</para>
+            <para>Hàm trả về một giá trị cho Key đó</para>
+            <para>Giá trị trả về là fallback.</para>
+            <para>Fallback có thể có nhiều kiểu</para>
+            </summary>
+            <param name="field">bool truyền vào</param>
+            <param name="name">Key</param>
+            <param name="fallback">Values</param>
+            <returns>true nếu tồn tại, false nếu không tồn tại</returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.GetField(System.String)">
+            <summary>
+            Hàm trả về một JSON cho Key có name đó
+            </summary>
+            <param name="name">Key</param>
+            <returns>JSON</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Adljh.Json.JSON.HasFields(System.String[])" -->
+        <member name="M:Adljh.Json.JSON.HasField(System.String)">
+            <summary>
+            Kiểm tra JSON nào có Key nào tên là các name truyền vào hay không
+            </summary>
+            <param name="names">Keys</param>
+            <returns>true nếu tồn tại, false nếu không tồn tại</returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.Clear">
+            <summary>
+            Xoá mọi giá trị lưu trong JSON
+            </summary>
+        </member>
+        <member name="M:Adljh.Json.JSON.Copy">
+            <summary>
+            <para>Sao chép 1 JSON khác từ 1 JSON có sẵn</para>
+            <para>Ví dụ:</para>
+            <para></para>
+            <para>JSON old = new JSON();</para>
+            <para>JSON new = old.Copy();</para>
+            </summary>
+            <returns>JSON</returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.Merge(Adljh.Json.JSON)">
+            <summary>
+            <para>Tạo 1 JSON mới tổng hợp từ 2 JSON có sẵn trước đó</para>
+            <para>Ví dụ:</para>
+            <para></para>
+            <para>JSON old1 = new JSON();</para>
+            <para>JSON old2 = new JSON();</para>
+            <para>JSON new = old1.Merge(old2);</para>
+            <para>Khi ấy JSON new sẽ có toàn bộ các thông số từ 2 JSON old1 và old2</para>
+            </summary>
+            <param name="obj">JSON old2</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.MergeRecur(Adljh.Json.JSON,Adljh.Json.JSON)">
+            <summary>
+            <para>Tạo 1 JSON mới tổng hợp từ 2 JSON có sẵn trước đó và quy định JSON nào trước JSON nào sau</para>
+            <para>Ví dụ:</para>
+            <para></para>
+            <para>JSON old1 = new JSON();</para>
+            <para>JSON old2 = new JSON();</para>
+            <para>JSON new = JSON.MergeRecur(old1, old2);</para>
+            <para></para>
+            <para>Khi ấy JSON new sẽ có toàn bộ các thông số từ 2 JSON old1 và old2</para>
+            <para>Và thứ tự các cặp Key tổng hợp từ 2 JSON sẽ theo thứ tự từ old1 đến old2 (Trái sang phải)</para>
+            </summary>
+            <param name="obj">JSON old2</param>
+        </member>
+        <member name="M:Adljh.Json.JSON.Bake">
+            <summary>
+            Trả giá trị cho str và type của JSON đó
+            </summary>
+        </member>
+        <member name="M:Adljh.Json.JSON.BakeAsync">
+            <summary>
+            Trả giá trị cho str và type của JSON đó trong thời gian chờ đợi
+            </summary>
+        </member>
+        <member name="M:Adljh.Json.JSON.Print(System.Boolean)">
+            <summary>
+            <para>Lấy ra chuỗi Json của JSON đó</para>
+            <para>Ví dụ:</para>
+            <para></para>
+            <para>JSON json = new JSON();</para>
+            <para>string jsonString = json.Print();</para>
+            </summary>
+            <param name="pretty"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.PrintAsync(System.Boolean)">
+            <summary>
+            <para>Lấy ra chuỗi Json của JSON đó trong thời gian chờ đợi</para>
+            <para>Ví dụ:</para>
+            <para>JSON json = new JSON();</para>
+            <para>string jsonString = json.Print();</para>
+            </summary>
+            <param name="pretty"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.ToString">
+            <summary>
+            Trả về string Json của JSON đó
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.ToString(System.Boolean)">
+            <summary>
+            Trả về string Json của JSON đó
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Adljh.Json.JSON.ToDictionary">
+            <summary>
+            Trả về Dictionary Json của JSON đó
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Adljh.Json.JSON.isContainer">
+            <summary>
+            Có chứa kiểu nào khác không?
+            </summary>
+        </member>
+        <member name="P:Adljh.Json.JSON.Count">
+            <summary>
+            Trả về số lượng phần tử trong list JSON
+            </summary>
+        </member>
+        <member name="P:Adljh.Json.JSON.nullJO">
+            <summary>
+            Json NULL này rỗng giống với string.Empty
+            </summary>
+        </member>
+        <member name="P:Adljh.Json.JSON.obj">
+            <summary>
+            Json OBJECT này rỗng giống với string.Empty
+            </summary>
+        </member>
+        <member name="P:Adljh.Json.JSON.arr">
+            <summary>
+            Json ARRAY này rỗng giống với string.Empty
+            </summary>
+        </member>
+        <member name="P:Adljh.Json.JSON.IsNumber">
+            <summary>
+            Kiểm tra JSON thuộc Number hay không?
+            </summary>
+        </member>
+        <member name="P:Adljh.Json.JSON.IsNull">
+            <summary>
+            Kiểm tra JSON có NULL hay không?
+            </summary>
+        </member>
+        <member name="P:Adljh.Json.JSON.IsString">
+            <summary>
+            Kiểm tra JSON thuộc String hay không?
+            </summary>
+        </member>
+        <member name="P:Adljh.Json.JSON.IsBool">
+            <summary>
+            Kiểm tra JSON thuộc Bool hay không?
+            </summary>
+        </member>
+        <member name="P:Adljh.Json.JSON.IsArray">
+            <summary>
+            Kiểm tra JSON thuộc Array hay không?
+            </summary>
+        </member>
+        <member name="P:Adljh.Json.JSON.IsObject">
+            <summary>
+            Kiểm tra JSON thuộc Object hay không?
+            </summary>
+        </member>
+        <member name="P:Adljh.Json.JSON.Item(System.Int32)">
+            <summary>
+            Gán hoặc lấy 1 JSON theo index trong list
+            </summary>
+            <param name="index">id</param>
+            <returns>JSON</returns>
+        </member>
+        <member name="P:Adljh.Json.JSON.Item(System.String)">
+            <summary>
+            Gán hoặc lấy 1 JSON theo index trong list
+            </summary>
+            <param name="index">id</param>
+            <returns>JSON</returns>
+        </member>
+        <member name="T:Adljh.Json.JSON.Type">
+            <summary>
+            Mình cũng cung cấp các kiểu để các bạn dễ dàng chọn lựa và sử dụng hiệu quả tuỳ theo nhu cầu sử dụng của các bạn
+            </summary>
+        </member>
+        <member name="T:Adljh.Json.JSON.FieldNotFound">
+            <summary>
+            Thêm vào JSON một Key không tồn tại
+            </summary>
+            <param name="name">System.String</param>
+        </member>
+        <member name="T:Adljh.Json.JSON.GetFieldResponse">
+            <summary>
+            Lấy ra một JSON
+            </summary>
+            <param name="obj">Adljh.Json.JSON</param>
+        </member>
+    </members>
+</doc>
